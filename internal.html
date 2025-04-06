@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatTube</title>
+    <style>
+      body {
+        background-color: rgb(220, 208, 192);
+      }
+
+      .logo {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      /* .sidebar {
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(220, 208, 192);
+      }
+
+      .sidebar a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .sidebar a.active {
+        background-color: burlywood;
+        color: black;
+      }
+
+      .sidebar a:hover:not(a.active) {
+        background-color: #555;
+        color: white;
+      } */
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      main {
+        max-width: 2000px;
+        /* margin-left: 200px; */
+        padding: 1px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .channel-card {
+        flex: 1;
+        max-width: 250px;
+        cursor: pointer;
+      }
+
+      strong {
+        font-size: 26px;
+      }
+
+      .channel-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .channel-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .channel-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .channel-info {
+        display: flex;
+        gap: 20px;
+      }
+
+      /* @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .sidebar a {
+          float: left;
+        }
+
+        main {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+
+        .logo {
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <h2 class="logo">CatTube</h2>
+    <!-- <aside>
+      <nav class="sidebar">
+        
+        <a href="#" class="active">Here, Cats</a>
+        <a href="#">I guess more Cats</a>
+        <a href="#">And even more Cats</a>
+      </nav>
+    </aside> -->
+
+    <main>
+      <div class="channel-card">
+        <img src="img/cat2.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat1.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>20,000 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <img src="img/cat2.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat2.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>48,000 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <img src="img/cat3.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat3.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>200,000 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <img src="img/cat6.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat4.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>240 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <img src="img/cat5.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat5.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>26,000 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-card">
+        <img src="img/cat6.jpg" alt="" />
+
+        <div class="channel-info">
+          <div class="channel-icon">
+            <img src="img/cat6.jpg" alt="" />
+          </div>
+          <div class="channel-name">
+            <strong>This is a cat</strong>
+            <p>Cat Channel</p>
+            <p>30,000 views . 3 days ago</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
