@@ -4,18 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatTube</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  <style>
+    .logo {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .sidebar {
+      width: 200px;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(220, 208, 192);
+      font-size: 16px;
+    }
+
+    .sidebar a {
+      display: block;
+
+      padding: 16px;
+
+      text-decoration: none;
+
+      color: black;
+    }
+
+    .sidebar a.active {
+      background-color: burlywood;
+
+      color: black;
+    }
+
+    .sidebar a:hover:not(a.active) {
+      background-color: #555;
+
+      color: white;
+    }
+  </style>
   <body>
     <h2 class="logo">CatTube</h2>
-    <!-- <aside>
+    <aside>
+      <div class="search-bar">
+        <form action="#" class="search-form">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for more cat videos"
+          />
+          <button type="submit" class="search-button">🔍</button>
+        </form>
+      </div>
       <nav class="sidebar">
-        
         <a href="#" class="active">Here, Cats</a>
         <a href="#">I guess more Cats</a>
         <a href="#">And even more Cats</a>
       </nav>
-    </aside> -->
+    </aside>
 
     <main>
       <div class="channel-card">
@@ -108,5 +161,52 @@
         </div>
       </div>
     </main>
+
+    <footer style="background-color: rgb(201, 190, 176); font-size: 16px">
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 20px;
+        "
+      >
+        <div
+          style="
+            flex: 1;
+            max-width: fit-content;
+            margin: 20px;
+            padding-right: 20px;
+          "
+        >
+          <h4>About Me</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 10px">
+              JOHN PHILIP MAGSAYSAY &copy; 2025
+            </li>
+            <li style="margin-bottom: 10px">
+              A graduating 2nd year student aspiring to be a developer
+            </li>
+          </ul>
+        </div>
+
+        <div
+          style="
+            flex: 1;
+            max-width: fit-content;
+            margin: 20px;
+            padding-right: 20px;
+          "
+        >
+          <h4>Connect</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 10px">Github</li>
+            <li style="margin-bottom: 10px">Facebook</li>
+            <li style="margin-bottom: 10px">Instagram</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
