@@ -1,38 +1,13 @@
 body {
   background-color: rgb(220, 208, 192);
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
   font-size: 36px;
   text-align: center;
 }
-
-/* .sidebar {
-  width: 200px;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(220, 208, 192);
-}
-
-.sidebar a {
-  display: block;
-  padding: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-.sidebar a.active {
-  background-color: burlywood;
-  color: black;
-}
-
-.sidebar a:hover:not(a.active) {
-  background-color: #555;
-  color: white;
-} */
 
 img {
   border-radius: 10px;
@@ -41,7 +16,6 @@ img {
 
 main {
   max-width: 2000px;
-  /* margin-left: 200px; */
   padding: 1px 16px;
   display: flex;
   flex-wrap: wrap;
@@ -58,10 +32,6 @@ main {
 strong {
   font-size: 26px;
 }
-
-/* .channel-card:hover {
-  transform: translateY(-10px);
-} */
 
 .channel-icon {
   width: 48px;
@@ -81,30 +51,32 @@ strong {
   gap: 20px;
 }
 
-/* @media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  main {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .logo {
-    text-align: center;
-  }
+footer {
+  background-color: rgb(201, 190, 176);
+  font-size: 16px;
 }
 
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-} */
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: fit-content;
+  margin: 20px;
+  padding-right: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
