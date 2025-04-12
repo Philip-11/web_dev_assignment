@@ -15,9 +15,7 @@ main {
 }
 
 .search-bar {
-  flex: 1;
   max-width: fit-content;
-  position: relative;
 }
 
 .search-form {
