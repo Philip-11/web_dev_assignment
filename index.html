@@ -49,6 +49,38 @@
 
       color: white;
     }
+
+    @media only screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+
+        height: auto;
+
+        position: relative;
+      }
+
+      .sidebar a {
+        float: left;
+      }
+
+      main {
+        margin-left: 0;
+
+        margin-top: 10px;
+      }
+
+      .logo {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+
+        float: none;
+      }
+    }
   </style>
   <body>
     <h2 class="logo">CatTube</h2>
